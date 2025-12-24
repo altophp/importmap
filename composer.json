@@ -1,0 +1,62 @@
+{
+    "name": "alto/importmap",
+    "description": "Manage render and resolve Import Maps - Support scopes, integrity hashes, and WICG-compliant resolution.",
+    "keywords": [
+        "importmap",
+        "javascript",
+        "modules",
+        "esm",
+        "assets",
+        "html",
+        "renderer",
+        "wicg",
+        "php"
+    ],
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Simon André",
+            "email": "smn.andre@gmail.com"
+        }
+    ],
+    "homepage": "https://github.com/phpalto/importmap",
+    "support": {
+        "issues": "https://github.com/phpalto/importmap/issues",
+        "docs": "https://github.com/phpalto/importmap#readme"
+    },
+    "funding": [
+        {
+            "type": "github",
+            "url": "https://github.com/sponsors/smnandre"
+        }
+    ],
+    "require": {
+        "php": ">=8.3"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "phpstan/phpstan": "^2.0",
+        "phpunit/phpunit": "^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Alto\\ImportMap\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Alto\\ImportMap\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "cs": "vendor/bin/php-cs-fixer fix",
+        "qa": [
+            "@cs",
+            "@sa",
+            "@test"
+        ],
+        "sa": "vendor/bin/phpstan analyse",
+        "test": "vendor/bin/phpunit"
+    }
+}
