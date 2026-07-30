@@ -20,10 +20,10 @@
             "email": "smn.andre@gmail.com"
         }
     ],
-    "homepage": "https://github.com/phpalto/importmap",
+    "homepage": "https://github.com/altophp/importmap",
     "support": {
-        "issues": "https://github.com/phpalto/importmap/issues",
-        "docs": "https://github.com/phpalto/importmap#readme"
+        "issues": "https://github.com/altophp/importmap/issues",
+        "docs": "https://github.com/altophp/importmap#readme"
     },
     "funding": [
         {
