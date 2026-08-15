@@ -127,6 +127,10 @@ try {
 }
 ```
 
+## Documentation
+
+The complete documentation is available at [altophp.com/importmap](https://altophp.com/importmap).
+
 ## Development
 
 ### Running Tests
@@ -140,7 +144,7 @@ vendor/bin/phpunit
 ### Static Analysis
 
 ```bash
-composer analyse
+composer sa
 # or
 vendor/bin/phpstan analyse
 ```
