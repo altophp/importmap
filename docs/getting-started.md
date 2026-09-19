@@ -28,4 +28,5 @@ The renderer produces an import-map script followed by preload links for top-lev
 
 `ImportMap` is mutable: `add()`, `addEntry()`, and `merge()` update the current map and return it for chaining.
 
-Next, define more complete [maps](maps.md), configure [rendering](rendering.md), or resolve specifiers in PHP with the [resolver](resolution.md).
+Next, define and resolve [imports](imports.md), combine [package maps](packages.md),
+or configure browser [output](output.md).

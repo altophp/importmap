@@ -1,16 +1,26 @@
 # Alto Importmap
 
-Alto Importmap builds, loads, combines, renders, and resolves JavaScript import maps in PHP. It supports top-level imports, scopes, integrity metadata, null mappings, and module preloads.
+Alto Importmap builds, combines, renders, and resolves JavaScript import maps
+in PHP. It supports exact and prefix imports, scopes, integrity metadata,
+blocked entries, and module preloads.
 
-## Introduction
+```php
+use Alto\ImportMap\ImportMap;
 
-- [Installation](installation.md) installs the package and lists its requirements.
-- [Getting started](getting-started.md) builds and renders a first map.
+$map = new ImportMap();
+$map->add('app', '/assets/app.js');
+```
 
-## Import maps
+## Documentation
 
-- [Maps](maps.md) covers entries, scopes, integrity metadata, JSON, and merging.
-- [Rendering](rendering.md) generates safe import-map and module-preload tags.
-- [Resolution](resolution.md) resolves exact, prefix, scoped, and URL-like specifiers.
+- [Installation](installation.md): install the package and verify its requirements.
+- [Getting started](getting-started.md): build and render a first import map.
+- [Imports](imports.md): define and resolve exact, prefix, and scoped imports.
+- [Packages](packages.md): load and combine maps contributed by packages.
+- [Output](output.md): generate safe import-map and module-preload tags.
+- [Caching](caching.md): cache generated output without hiding map changes.
+- [Errors](errors.md): recover from invalid entries, files, and resolutions.
 
-The package represents import maps and returns HTML or resolution data. It does not download JavaScript modules or write configuration files.
+The package represents import maps and returns HTML or resolution data. It does
+not download JavaScript modules, verify remote content, or write configuration
+files.
