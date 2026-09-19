@@ -129,7 +129,14 @@ try {
 
 ## Documentation
 
-The complete documentation is available at [altophp.com/importmap](https://altophp.com/importmap).
+- [Installation](docs/installation.md): install the package and verify its requirements.
+- [Getting started](docs/getting-started.md): build and render a first import map.
+- [Imports](docs/imports.md): define and resolve exact, prefix, and scoped imports.
+- [Packages](docs/packages.md): load and combine maps contributed by packages.
+- [Output](docs/output.md): generate safe import-map and module-preload tags.
+- [Caching](docs/caching.md): cache generated output without hiding map changes.
+- [Errors](docs/errors.md): recover from invalid entries, files, and resolutions.
+- [Complete documentation](docs/index.md): review the package scope and every guide.
 
 ## Development
 
