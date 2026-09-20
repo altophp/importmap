@@ -138,30 +138,34 @@ try {
 - [Errors](docs/errors.md): recover from invalid entries, files, and resolutions.
 - [Complete documentation](docs/index.md): review the package scope and every guide.
 
-## Development
+## Contributing
 
-### Running Tests
+Contributions of all kinds are welcome. Visit the
+[project on GitHub](https://github.com/altophp/importmap) to
+[report a bug](https://github.com/altophp/importmap/issues/new),
+[suggest a feature](https://github.com/altophp/importmap/issues/new), or
+[open a pull request](https://github.com/altophp/importmap/pulls).
 
-```bash
-composer test
-# or
-vendor/bin/phpunit
-```
-
-### Static Analysis
+Before submitting code, run:
 
 ```bash
-composer sa
-# or
-vendor/bin/phpstan analyse
+# Runs PHP CS Fixer, PHPStan, and PHPUnit
+composer qa
 ```
 
-### Code Formatting
+Changes to public behavior should include tests and documentation.
 
-```bash
-vendor/bin/php-cs-fixer fix
-```
+## Support
+
+ALTO ImportMap is open source and independently maintained by
+[Simon André](https://smnandre.dev). If it is useful to your work, you can
+support its continued development through
+[GitHub Sponsors](https://github.com/sponsors/smnandre).
+
+Sharing the package or
+[starring it on GitHub](https://github.com/altophp/importmap) also helps.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+ALTO ImportMap is released by [ALTO PHP](https://altophp.com) under the
+[MIT License](LICENSE).
