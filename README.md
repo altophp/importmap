@@ -1,15 +1,13 @@
-# Alto ImportMap
+<h1 align="center">
+  <a href="https://altophp.com/importmap">
+    <img src=".github/alto-importmap.svg" alt="ALTO Importmap">
+  </a>
+</h1>
 
 Alto ImportMap is a PHP library to build, validate, and
 render [import maps](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script/type/importmap)
 in PHP for web applications. It supports imports, scopes and integrity metadata, and includes a resolver aligned with
 the WICG resolution algorithm.
-
-## Installation
-
-```bash
-composer require alto/importmap
-```
 
 ## Basic Usage
 
@@ -61,6 +59,12 @@ echo $renderer->render($map);
 </script>
 <link rel="modulepreload" href="https://esm.sh/react@18.2.0">
 <link rel="modulepreload" href="https://esm.sh/react-dom@18.2.0">
+```
+
+## Installation
+
+```bash
+composer require alto/importmap
 ```
 
 ## Advanced Features
